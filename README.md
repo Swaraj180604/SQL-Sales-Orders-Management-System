@@ -1,7 +1,7 @@
-## Data Schema
+# Data Schema
 The database consists of three primary tables linked through relational keys to ensure data integrity:
 
-# 1. AGENTS Table
+## 1. AGENTS Table
 Stores information about the sales force.
 
 **AGENT_CODE**: Unique identifier for each agent (Primary Key).
@@ -14,7 +14,7 @@ Stores information about the sales force.
 
 **PHONE_NO**: Contact information.
 
-# 2. CUSTOMER Table
+## 2. CUSTOMER Table
 Contains detailed profiles and financial status of clients.
 
 **CUST_CODE**: Unique identifier for each customer (Primary Key).
@@ -25,7 +25,7 @@ Contains detailed profiles and financial status of clients.
 
 **AGENT_CODE**: Links each customer to a specific agent (Foreign Key).
 
-# 3. ORDERS Table
+## 3. ORDERS Table
 Records individual transaction details.
 
 **ORD_NUM**: Unique order identification number (Primary Key).
@@ -36,7 +36,7 @@ Records individual transaction details.
 
 **CUST_CODE / AGENT_CODE**: Foreign keys linking the transaction to both a customer and an agent.
 
-# Key Features
+## Key Features
 **Relational Integrity**: Uses PRIMARY KEY and REFERENCES constraints to maintain strict relationships between agents, customers, and their orders.
 
 **Comprehensive Financial Reporting**: Includes logic to calculate total commissions, average opening amounts, and total outstanding debt across different regions.
