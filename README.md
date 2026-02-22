@@ -1,3 +1,5 @@
+# Project Overview
+This SQL project implements a relational database system named SQLPROJECT designed to manage sales operations. It tracks the relationships between sales agents, their customers, and the specific orders placed. The system is built to handle financial tracking, such as commissions, outstanding balances, and advance payments, while providing analytical insights through a variety of pre-configured queries.
 # Data Schema
 The database consists of three primary tables linked through relational keys to ensure data integrity:
 
